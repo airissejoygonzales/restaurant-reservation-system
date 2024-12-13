@@ -1,38 +1,88 @@
+/* General layout for App */
 .App {
+  font-family: "Courier New", serif;
+  margin: 0;
+  padding: 0;
+  /*background-color: rebeccapurple;*/
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.nav-button {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: cadetblue;
+  border-radius: 5px;
+}
+
+h2 {
   text-align: center;
+  margin-top: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/*//table style*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+th {
+  background-color: #f4f4f4;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 1rem;
+}
+
+input, textarea, select, button {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007BFF;
   color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background-color: #0056b3;
 }
